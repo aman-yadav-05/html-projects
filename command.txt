@@ -19,3 +19,7 @@ git commit -m "some message"
 git push origin master
 
 and you are good to go.
+
+
+we can also change repository from private to public and vice verse. project level settings.
+go to repository settings and you'll find in bottom to change from private topublic in danger zone
