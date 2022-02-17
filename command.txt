@@ -1,0 +1,13 @@
+touch .gitignore
+git config --global user.name Aman
+git config --global user.email "amanyadav592002@gmail.com"
+git init
+git add .
+git commit -m "initial commit"
+git status #just tocheck the status not necessary
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+tail <path to id_rsa.pub> add this key to gitgub we can use cat also instead of tail
+git remote add origin <ssh url.git>
+git push origin master
+
+above steps to upload project in github
