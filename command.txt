@@ -11,3 +11,11 @@ git remote add origin <ssh url.git>
 git push origin master
 
 above steps to upload project in github
+
+
+now to upload the files after some changes use below commands
+git add .
+git commit -m "some message"
+git push origin master
+
+and you are good to go.
