@@ -1,0 +1,114 @@
+/* css reset  */
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background: url(/images/background/web\ dev.jpg) no-repeat; */
+    /* background-size:  */
+    /* background-size: 105% 675%; */
+    /* backgr */
+    /* opacity: 0.7; */
+    color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* background */
+nav::before{
+    background: url(/images/background/web\ dev\ bg2.jpg)no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 1; */
+    
+
+}
+
+/* styling navigation bar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    font-weight: bold;
+    /* cursor: pointer; */
+    /* opacity: 0.9; */
+    /* justify-content:center; */
+}
+
+/* resizing logo  */
+.navbar img{
+    width: 50px;
+    height: 50px;
+    /* color: ; */
+    filter: invert(100%);
+}
+
+.navItem a{
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #a4fffc;
+
+}
+.navItem a:hover{
+    background-color:lightskyblue;
+    color: darkblue;
+    border-radius: 20px;
+
+}
+
+/* styling the registration section  */
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.register p{
+    width: 500px;
+    font-style: italic;
+}
+.register h1{
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+
+.course{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.htmlsize{
+    width: 100px;
+    height: 100px;
+}
+
+.head{
+    margin: 40px 5px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 5px;
+    /* background-color: rgb(122, 121, 121); */
+}
+
+
+/* primitive classes */
+.btn:hover{
+    /* box-shadow: 0px 0px 5px lightseagreen; */
+    box-shadow: 0 0 10px rgb(179, 179, 212);
+}

@@ -1,0 +1,152 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+/* background in whole body */
+body{
+    background: url(/images/background/car\ bf.jpg) no-repeat center center/cover;
+    /* opacity: 0.2; */
+    /* width:1200px;
+    height: 100%; */
+}
+
+/* navbar styling */
+#navbar{
+    background-color: black;
+    display: flex;
+    opacity: 0.8;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1px 3px;
+    margin: 1px 5px;
+    font-size: 1.2rem;
+    cursor: default;
+}
+#navbar ul li a:hover{ 
+   background-color: aliceblue;
+   color: black;
+   border: 2px solid white;
+   border-radius: 5px;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 337px;
+    margin: 65px 1px;
+}
+
+/* service section  */
+#services-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+#services{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin: 2px 34px;
+    border-radius: 20px;
+}
+#services .box img{
+    filter: invert(100%);
+    width: 140px;
+    height: 150px;
+}
+/* #services box1{
+    color: white;
+    width: auto;
+    height: auto;
+} */
+
+#services #box1 img{
+    width: 200px;
+    height: 123px;
+}
+#services-container .h-primary.center{
+    margin: 23px 2px;
+    font-size: 2.5rem;
+    
+}
+#services .box:hover{
+    box-shadow: 0 0 10px cyan;
+}
+
+/* contact us section */
+#form-contact{
+    display: flex;
+    justify-content: space-around;
+}
+.empform{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+
+
+
+/* utility classes */
+.h-primary{
+    font-family: 'Arvo', serif;
+    font-size: 2.3rem;
+}
+.h-secondary{
+    font-size: 1.3rem;
+    font-family: 'Arvo', serif;
+}
+p{
+    font-family: 'IBM Plex Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    width: 100px;
+    padding: 1px 3px;
+    font-size: 16px;
+    box-shadow: 0 0 5px white;
+    margin: 15px 2px;
+}
+.btn:hover{
+    box-shadow: 0 0 5px red;
+}
+a{
+    text-decoration: none;
+    font-family: 'IBM Plex Serif', serif;
+}

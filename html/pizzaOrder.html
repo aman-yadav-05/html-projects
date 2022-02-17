@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA SHOP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* position: absolute; */
+            color: white;
+        }
+
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: -webkit-fill-available;
+        }
+
+        .left {
+            /* position: absolute; */
+            border: 2px solid white;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .mid {
+            display: flex;
+            margin: 5px;
+            border: 2px solid wheat;
+            border-radius: 10px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .mid .navbar:hover {
+            background-color: grey;
+            border-radius: 5px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            border: 2px solid grey;
+            margin: 5px;
+        }
+
+        .navbar {
+            margin-left: 5px;
+            margin-right: 35px;
+        }
+
+        img.logo {
+            height: 40px;
+        }
+
+        .head2 {
+            font-family: 'Vujahday Script', cursive;
+            display: block;
+            /* border: 2px solid white; */
+            position: absolute;
+            /* display: flex; */
+            /* height: 200px;
+            margin-left: 80px;
+            margin-top: 40px; */
+            text-align: center;
+            width: 1187px;
+    margin-top: 20px;
+
+            font-size: 25px;
+            text-decoration: underline;
+        }
+
+        .content {
+            border: 2px solid white;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 50%;
+            left: 10px;
+            top: 150px;
+            width: 100%;
+            right: 10px;
+            margin: 5px;
+        }
+
+        .contentright {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input.from {
+            width: 350px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="bg" src="/images/pizza bg.jpg " alt="not found">
+    <header class="head">
+
+        <div class="container">
+            <div class="left">
+                <img class="logo" src="/images/logo pizza.png" alt="not found">
+            </div>
+            <div class="mid">
+                <div class="navbar" id="nav1">Home</div>
+                <div class="navbar" id="nav2">Pricing</div>
+                <div class="navbar" id="nav3">Shops</div>
+                <div class="navbar" id="nav4">Menu</div>
+                <div class="navbar" id="nav5">Check delivery availability</div>
+            </div>
+            <div class="right">
+                <input class="right" type="button" value="contact us">
+            </div>
+        </div>
+    </header>
+    <div class="head2">
+        <h1>order now!</h1>
+    </div>
+    <div class="content">
+        <div class="contentleft">
+            <h2>Sign to get 10% right now!!</h2>
+        </div>
+        <div class="contentright">
+            <form action="" class="form">
+                <input class="from" type="text" placeholder="enter your name">
+                <input class="from" type="text" placeholder="enter your address">
+                <input class="from" type="number" placeholder="enter your phone number">
+                <input class="from" type="email" placeholder="enter your email">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
