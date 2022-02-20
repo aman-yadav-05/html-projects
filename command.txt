@@ -5,7 +5,11 @@ git init
 git add .
 git commit -m "initial commit"
 git status #just tocheck the status not necessary
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+to add new file dont use key generation again
+ ssh-keygen -t rsa -b 4096 -C "amanyadav592002@gmail.com"
+
+
 tail <path to id_rsa.pub> add this key to gitgub we can use cat also instead of tail
 git remote add origin <ssh url.git>
 git push origin master
