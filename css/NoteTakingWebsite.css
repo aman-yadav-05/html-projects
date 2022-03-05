@@ -1,0 +1,49 @@
+body {
+	font-family: "Fredoka", sans-serif;
+}
+
+/* styling navbar */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(41, 39, 39);
+	color: white;
+	border-radius: 5px;
+}
+.subNavbar {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+.subNavbar a {
+	text-decoration: none;
+	color: white;
+	margin-left: 15px;
+}
+.subNavbar .name {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	margin-left: 15px;
+}
+
+.search {
+	display: flex;
+    align-items: center;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.search #inpSearch{
+    border-color: lightblue;
+    margin: 0 15px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border-radius: 5px;
+}
