@@ -47,3 +47,51 @@ body {
     color: white;
     border-radius: 5px;
 }
+
+/* styling the adding note section  */
+.noteContainer{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* margin: 5px 350px; */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.noteContainer .card h1{
+	font-size: 40px;
+	text-align: center;
+}
+textarea{
+	width: 565px;
+	font-size: 18px;
+}
+.noteContainer .card .innercard{
+	/* border: ; */
+	padding: 5px 50px;
+	display: flex;
+	border-top: 1px solid black;
+	flex-direction: column;
+	margin: 5px 50px;
+	/* border: 0.5px solid grey; */
+}
+
+.noteContainer .card .innercard .btn{
+	width: 50px;
+}
+.noteContainer .card .innercard .head{
+	font-weight: bold;
+}
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.notes{
+	display: flex;
+	flex-direction: column;
+}
+.notes .btn{
+	width: 50px;
+}
