@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(51, 50, 50);
+	font-family: "Roboto", sans-serif;
+}
+
+/* styling top of the window  */
+.top {
+	display: flex;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0px 5px;
+	color: white;
+	height: 50px;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	background-color: rgb(51, 50, 50);
+}
+
+.logo {
+	width: 35px;
+	height: 35px;
+	margin: 0px 5px;
+}
+
+#hamburger-menu {
+	width: 20px;
+	height: 20px;
+}
+.name a{
+    text-decoration: none;
+    color: white;
+}
+
+/* utility classes */
+.flex {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
