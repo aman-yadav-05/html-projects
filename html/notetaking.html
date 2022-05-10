@@ -78,11 +78,15 @@
 
 		<div class="container my-3">
 			<h1>Welcome to Note-Taking.com</h1>
+	 
+		
 			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title">Add Your Note</h5>
 					<div class="form-group">
+						<input type="text" placeholder="add title" class="form-control" id="title">
 						<textarea
+							placeholder="Add note"
 							class="form-control"
 							id="addTxt"
 							rows="3"
@@ -93,7 +97,9 @@
 				</div>
 			</div>
 
+			<hr>
 			<h1>Your notes</h1>
+			<hr>
 			<div id="notes" class="row container-fluid"></div>
 		</div>
 
