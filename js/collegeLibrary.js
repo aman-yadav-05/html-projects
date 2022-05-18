@@ -1,5 +1,10 @@
 console.log("js connected.");
 
+// to do 
+// store all the data to localStorage
+// add delete button in each row so that book can be deleted
+//add a scroll bar to view. if add many books.
+
 //constructor
 function book(name, author, type) {
     this.name = name;
@@ -34,7 +39,7 @@ Display.prototype.clear = function () {
 }
 
 Display.prototype.validate = function (Book) {
-    if (Book.name.length < 22 || Book.author.length < 2) {
+    if (Book.name.length < 2 || Book.author.length < 2) {
         return false;
     } else {
         return true;
@@ -68,26 +73,29 @@ function libraryFormsubmit(e) {
     } else if (nonFiction.checked) {
         type = nonFiction.checked;
     }
+}
 
-    let Book = new book(name, author, type);
-    console.log(Book)
+let Book = new book(name, author, type);
+console.log(Book)
 
-    let display = new Display();
+let display = new Display();
 
-    Display.prototype.show = function (type, displaymessage) {
-        let message = document.getElementById('message');
-        message.innerHTML = `<div class="alert alert-${type} alert-dismissible fade show" role="alert">
+Display.prototype.show = function (type, displaymessage) {
+    let message = document.getElementById('message');
+    message.innerHTML = `<div class="alert alert-${type} alert-dismissible fade show" role="alert">
         <strong>Message</strong> ${displaymessage}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>`;
-    }
+    setTimeout(() => {
+        message.innerHTML = ''
+    }, 2000);
+}
 
-    //to validate Book object
-    if (diplay.validate(Book)) {
-        display.add(Book);
-        display.clear();
-        diplay.show('success', `you have successfully added !`);
-    } else {
-        display.show('error', `you can't add this book!`);
-    }
+//to validate Book object
+if (display.validate(Book)) {
+    display.add(Book);
+    display.clear();
+    diplay.show('success', `you have successfully added !`);
+} else {
+    display.show('error', `you can't add this book!`);
 }
