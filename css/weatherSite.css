@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.mainFont{
+    font-family: 'Cookie', cursive;
+}
+
+/* styling navbar */
+.navitems{
+    list-style: none;
+    text-decoration: none;
+    margin: 2px 5px;
+}
+.navitems a{
+    text-decoration: none;
+    color:black;
+}
+
+#headbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/*utility classes*/
+.bigger{
+    font-size: 3.5rem;
+}
