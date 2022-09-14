@@ -1,68 +1,95 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+hr,
+div,
+span,
+img,
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6,
+iframe
+{
 	margin: 0;
 	padding: 0;
-	background-color: rgb(51, 50, 50);
-	font-family: "Roboto", sans-serif;
 }
-
-/* styling top of the window  */
-.top {
-	display: flex;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 0px 5px;
-	color: white;
-	height: 50px;
-	justify-content: space-between;
+a{
+	text-decoration: none;
+	/* display: flex; */
 	align-items: center;
-	font-size: 18px;
-	background-color: rgb(51, 50, 50);
+	color:black;
+	flex-direction: row;
 }
-
-
-#hamburger-menu {
-	width: 20px;
-	height: 20px;
+body{
+	 font-family: 'Roboto', sans-serif;
 }
-.name a{
-    text-decoration: none;
-    color: white;
-}
-
-#search{
-	background-color: black;
-	height: 38px;
-	width: 400px;
-	border-radius: 5px;
-	color: white;
-	border: 1px solid black;
-}
-#searchLogo{
-	/* border: 1px solid black; */
-	padding: 5px;
-	width: 25px;
-	height: 25px;
-}
-
-.searchBar{
+.left {
 	display: flex;
 	align-items: center;
-
 }
-
-#microphoneLogo{
-	width: 25px;
-	height: 25px;
-}
-/* utility classes */
-.flex {
+.right{
 	display: flex;
-	align-items: center;
-	/* justify-content: center; */
 }
-
 .logo {
-	width: 25px;
-	height: 25px;
-	margin: 0px 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.name{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.middle{
+	display: flex;
+	align-items: center;
+}
+.middle .input-group input{
+	width: 500px;
+}
+.middle .input-group span{
+	cursor: pointer;
+}
+.middle img{
+	cursor: pointer;
+}
+
+.videos{
+	display: flex;
+}
+.grid{
+	outline: 1px solid;
+	width: 330px;
+	padding: 120px;
+	margin: 10px 20px;
+	display: flex;
+
+}
+.navbarUtility{
+	outline: 1px solid red;
+	width: 50px;
+	height: 500px;
+	position: sticky;
+	margin-top: 10px;
+}
+.videoContainer{
+	display: flex;
+	flex-direction: column;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.iframeVideo{
+	width: 330px;
+	height: 130px;
 }

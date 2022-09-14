@@ -1,79 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>youtube.com</title>
-		<link rel="stylesheet" href="/css/youtubeClone.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<nav class="top">
-			<div class="head1 flex">
-				<div class="toggle">
-					<img
-						src="/images/logo/hamburger-menu.svg"
-						class="logo"
-						id="hamburger-menu"
-						alt="menu logo"
-					/>
-				</div>
-				<div class="logo">
-					<img
-						src="/images/logo/youtube-color.svg"
-						class="logo"
-						id="youtube-logo"
-						alt="youtube logo"
-					/>
-				</div>
-				<div class="name" style="margin-left: 5px">
-					<a href="www.youtube.com"><h3>YouTube</h3></a>
-				</div>
-			</div>
 
-			<div class="head2 flex">
-				<div class="searchBar">
-					<input
-						type="search"
-						name=""
-						id="search"
-						placeholder="search through youtube..."
-					/>
-					<img
-						src="/images/logo/search.svg"
-						id="searchLogo"
-						class="logo"
-						alt="search logo"
-					/>
-				</div>
-				<div class="microphone">
-					<img
-						src="/images/logo/mic-microphone.svg"
-						class="logo"
-						id="microphoneLogo"
-						alt="microphone logo"
-					/>
-				</div>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cloned YouTube</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/youtubeClone.css">
+	<link rel="icon" href="/images/favicons/Dakirby309-Simply-Styled-YouTube.ico">
+</head>
 
-			<div class="head3 flex">
-				<div class="create">
-					<img src="/images/logo/collapse-plus.svg" class="logo" id="createLogo" alt="create">
-				</div>
-				<div class="apps">
-					<img src="/images/logo/apps-grid.svg" class="logo" id="appsLogo" alt="apps logo">
-				</div>
-				<div class="notification">for notification</div>
-				<div class="profile">for profile</div>
+<body>
+	<nav class="navbar bg-light">
+		<div class="left">
+			<img src="/images/logo/list.svg" alt="" class="logo me-2">
+			<a href="#" style="
+			align-items: center;
+			display: flex;
+		">
+				<img src="/images/logo/youtube.svg" alt="" class="logo youtubeLogo">
+				<span class="name h4">Clone YouTube</span>
+			</a>
+		</div>
+		<div class="middle">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search"
+					aria-label="Text input with dropdown button">
+				<span class="input-group-text">
+					<img src="/images/logo/search.svg" alt="" class="logo search">
+				</span>
 			</div>
-		</nav>
-		<!-- <aside></aside> -->
-		<aside></aside>
+			<img src="/images/logo/mic-fill.svg" alt="" class="logo mic">
+		</div>
+		<div class="right">
+			<a href="">
+				<img src="/images/logo/grid-3x3-gap.svg" alt="" class="logo apps mx-2">
+			</a>
+			<a href="">
+				<img src="/images/logo/bell.svg" alt="" class="logo notification mx-2">
+			</a>
+			<a href="">
+				<img src="/images/logo/person-circle.svg" alt="" class="logo account mx-2">
+			</a>
+		</div>
+	</nav>
+	<hr>
 
-		<script src="/js/youtubeCLone.js"></script>
-	</body>
+	<section class="videos">
+		<div class="navbarUtility">
+			for navbar utility section
+		</div>
+		<div class="videoContainer">
+			<div class="row">
+				<span class="grid">
+					<iframe class="iframeVidep" src="https://www.youtube.com/embed/C3DLkaTP0FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</span>
+				<span class="grid">2</span>
+				<span class="grid">3</span>
+				<span class="grid">4</span>
+			</div>
+			<div class="row">
+				<span class="grid">5</span>
+				<span class="grid">6</span>
+				<span class="grid">7</span>
+				<span class="grid">8</span>
+			</div>
+			<div class="row">
+				<span class="grid">9</span>
+				<span class="grid">10</span>
+				<span class="grid">11</span>
+				<span class="grid">12</span>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
